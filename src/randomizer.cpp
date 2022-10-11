@@ -17,7 +17,7 @@ Randomizer::Randomizer(string fileName)
     if (!fileData.good())
     {
         cerr << "Error opening " << this->fileName << " !" << endl;
-        exit(1);
+        exit(EXIT_FAILURE);
     }
     else
     {
@@ -25,7 +25,7 @@ Randomizer::Randomizer(string fileName)
         // Escrevendo valores aleatórios no arquivo
         for (int i = 0; i < DATA_SIZE; i++)
         {
-            if (i % 20 == 0)
+            if (i % 20 == 0 && i != 0)
                 fileData << endl;
             fileData << fixed << setprecision(3) << distribution(generator) << " ";
         }
