@@ -1,26 +1,55 @@
-#include "randomizer.hpp"
-#include "bst.hpp"
+#include "chronos.hpp"
 
 using namespace std;
 
 int main()
 {
-/*     string fileName;
+    // RANDOM FILE CREATOR
+    /*
+    string fileName;
     cout << "Insert File Name: " << endl;
     cin >> fileName;
-
     Randomizer randomData(fileName);
- */
-    Bst t, *root = nullptr;
-    root = t.insertData(root, 77);
-    float values[5] = {15, 23, 6, 44, 31};
+    */
 
-    for (int i = 0; i < 5; i++)
-    {
-        t.insertData(root, values[i]);
-    }
+    cout << "BST TREE" << endl;
+    chronos(500);
+    chronos(5000);
+    chronos(50000);
+    chronos(500000);
 
-    t.inOrder(root);
+    cout << "AVL TREE" << endl;
+    chronosAVL(500);
+    chronosAVL(5000);
+    chronosAVL(50000);
+    chronosAVL(500000);
+
+    cout << "RBT TREE" << endl;
+    chronosRBT(500);
+    chronosRBT(5000);
+    chronosRBT(50000);
+    chronosRBT(500000);
+
+    cout << "VECTOR" << endl;
+
+    chronosVector(500);
+    chronosVector(5000);
+    chronosVector(50000);
+    chronosVector(500000);
+
+    cout << "MAP" << endl;
+
+    chronosMap(500);
+    chronosMap(5000);
+    chronosMap(50000);
+    chronosMap(500000);
+
+    cout << "UNORDEREDMAP" << endl;
+
+    chronosUnorderedMap(500);
+    chronosUnorderedMap(5000);
+    chronosUnorderedMap(50000);
+    chronosUnorderedMap(500000);
 
     return 0;
 }
