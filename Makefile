@@ -9,8 +9,7 @@ INCLUDE  := -Iinclude/
 SRC      :=  $(wildcard src/*.cpp) \
 $(wildcard src/avl/*.c) \
 $(wildcard src/bst/*.c) \
-$(wildcard src/rbt/*.c) \
-$(wildcard src/tools/*.cpp)
+$(wildcard src/rbt/*.c) 
 
 
 OBJECTS := $(SRC:%.cpp=$(OBJ_DIR)/%.o)

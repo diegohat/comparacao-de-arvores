@@ -1,12 +1,9 @@
 # Comparação de Estruturas - Árvores
-
 ![C++](https://img.shields.io/badge/Linguagem-C++-green.svg)
 ![Make](https://img.shields.io/badge/Compilacao-Make-orange)
 ![VSCode](https://img.shields.io/badge/IDE-VSCode-informational)
-
 ## Índice
-
-__0.__ [Proposta] (#proposta)
+__0.__ [Proposta](#proposta)
 
 __1.__ [Objetivos](#objetivos)
 
@@ -21,9 +18,7 @@ __5.__ [Conclusão](#discussão-dos-resultados)
 __6.__ [Referências](#referências)
 
 __7.__ [Compilação e Execução](#compilação-e-execução)
-
 ## Proposta
-
 Até o momento trabalhamos com três modelos de árvore, binária, avl e redblack. Chegou o momento de compararmos tais estruturas, observando seu comportamento sob diferentes volumes de dados. Para tanto, elabore arquivos que contenham 500 , 5000 , 50.000 , 500.000 entradas numéricas do tipo ponto flutuante. Para tanto, tente evitar repetições de valores em grande escala para que possamos ter uma estrutura profunda. Considere produzir os menores a partir dos maiores volumes de forma randômica. Feito a isso, vamos testar os seguintes processos:
 
 1) Qual o tempo gasto com pesquisa para um arquivo de entrada com 10.000 consultas. Considere como consulta a busca de um determinado número na estrutura escolhida. Para cada pesquisa, é preciso remover o elemento da árvore, retornando esse número para o usuário. Então, considere o processo de remoção como parte final do processo. 
@@ -35,76 +30,114 @@ Até o momento trabalhamos com três modelos de árvore, binária, avl e redblac
 4) Adotando como estrutura o map e unorder_map do C++, há ganhos maiores nesse processo de pesquisa?
 
 Elabore um relatório detalhando a implementação dessas estruturas, funcionamento da aplicação, exemplo de resultado, modo de compilação e conclusões. Considere essa última seção como uma discussão de quando adotar cada estrutura acima citada e o por quê de tal escolha. Para toda essa discussão, apresentar gráficos que demonstrem os resultados obtidos durante o processo de análise. 
-
 ## Objetivos
-
 <p align="justify">
-    Este trabalho consiste no desenvolvimento de uma aplicação em terminal utilizando a linguagem C++. Através de estrutura de dados foi proposto a criação de um método de compressão de dados fazendo uso da codificação de Huffman. A codificação de Huffman é um método de compressão que usa as probabilidades de ocorrência dos símbolos no conjunto de dados a ser comprimido para determinar códigos de tamanho variável para cada símbolo.    
+    Aplicar os conhecimentos adquiridos na disciplina de Algoritmos e Estrutura de Dados II para realizar uma comparação de tempo de execução da inserção, pesquisa e remoção de diferentes estruturas e através dos resultados avaliar suas aplicações.
 </p>
 
 ## Fundamento Teórico
+### Estrutura de Dados
+
 <p align="justify">
-    Para o uso da codificação, foram utilizadas estruturas em árvore, filas, listas e tabelas hash. Uma fila de prioridade foi criada para lidar com a reordenação da floresta de árvores que estava contida em uma lista de árvores. Abaixo segue as etapas do projeto e seus respectivos códigos.
+
+Estrutura de dados é o ramo da computação que estuda os diversos mecanismos de organização de dados para atender aos diferentes requisitos de processamento. Utiliza-se de conjuntos dinâmicos que podem crescer, encolher ou sofrer mudanças ao longo do tempo. Através de algumas técnicas básicas podemos representar esses conjuntos e manipulá-los em um computador. Os algoritmos utilizam desses conjuntos e exigem vários tipos diferentes de operações. A melhor maneira de implementar um conjunto dinâmico depende das operações que devem ser suportadas.
+    
+Para saber mais sobre Estruturas de dados, acesse:   
+
+<https://www.geeksforgeeks.org/data-structures/>
+
+<https://programacaodescomplicada.wordpress.com/indice/estrutura-de-dados/>
 </p>
 
-### Metodologia
+Visualizador de estruturas online:
 
-__1.__ [Contabilizar a recorrência de cada palavra no arquivo;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L41)
+<https://www.cs.usfca.edu/~galles/visualization/Algorithms.html>
 
-__2.__ [Normalizar a contabilização;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L49)
+### Árvores
 
-__3.__ [Montar a árvore com as regras apresentadas por Huffman;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L95)
+<p align="justify">
 
-__4.__ [Trocar as palavras pela codificação binária;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L62)
+Uma estrutura de dados Árvore é um conjunto finito de elementos em que cada elemento é chamado nó e o primeiro elemento é chamado de raiz da árvore.
 
-__5.__ [Salvar o arquivo em formato binário;](https://github.com/diegohat/huffman/blob/main/src/tree.cpp#L138)
+Esse tipo de estrutura organiza seus elementos de forma hierárquica, onde existe um elemento que fica no topo da árvore, chamado de raiz e existem os elementos subordinados a ele, que são chamados de nós filhos. Cada nó filho pode conter zero, um ou mais de um nó filho. Os nós filhos que não contém outros nós filhos são chamados de nós folhas.
 
-__6.__ [Observar e discutir sobre o ganho ou perda de espaço.](#discussão-dos-resultados)
+Para mais detalhes: 
+
+<https://www.freecodecamp.org/news/the-codeless-guide-to-tree-data-structures/>
+
+Tipos de Árvore:
+
+- Árvore Binária
+
+    <https://www.freecodecamp.org/news/binary-search-tree-what-is-it/>
+
+- Árvore AVL
+
+    <https://www.freecodecamp.org/news/avl-tree-insertion-rotation-and-balance-factor/>
+
+- Árvore Rubro-Negra
+
+    <https://www.freecodecamp.org/news/red-black-trees/>
+
+
+Mais sobre árvores: 
+
+<https://sites.google.com/site/proffdesiqueiraed/aulas/aula-10---arvores>
+
+</p>
+
+## Metodologia
+<p align="justify">
+
+
+
+</p>
 
 ## Resultados e Análises
 
-![Scrennshot](img/menuPrincipal.jpg)
+![Tabela 500](/img/500.png)
 
-- Ao executar o programa surgirão as seguintes opções:
-    - `1` Imprime a lista de palavras do texto e suas frequências normalizadas.
-    - `2` Imprime a árvore de huffman (em lista) com seus valores associados em binário.
-    - `3` Cria o arquivo binário test.dat no diretório /src .
-    - `9` Finaliza o programa.
+![Gráfico Insert 500](/img/ins500.png)
 
-- Resultados esperados pela execução das opções:
+![Gráfico Search 500](/img/pesq500.png)
 
-    - ### [1] Print word's frequencies.
-        
-        (Palavra, Frequencia Normalizada)
+![Gráfico Remove 500](/img/rem500.png)
 
-        ![Scrennshot](img/1.jpg)
+![Tabela 5000](/img/5000.png)
 
-    - ### [2] Print Huffman tree.
+![Gráfico Insert 5000](/img/inse5000.png)
 
-        (Palavra, Valor Binário)
+![Gráfico Search 5000](/img/pesq5000.png)
 
-        ![Scrennshot](img/2.jpg)
+![Gráfico Remove 5000](/img/rem5000.png)
 
-    - ### [3] Create binary file.
+![Tabela 50000](/img/50000.png)
 
-        ![Scrennshot](img/3.jpg)
+![Gráfico Insert 50000](/img/ins50000.png)
 
-    - ### [9] Exit.
+![Gráfico Search 50000](/img/pesq50000.png)
 
-        ![Scrennshot](img/4.jpg)
+![Gráfico Remove 50000](/img/rem50000.png)
+
+![Tabela 500000](/img/500000.png)
+
+![Gráfico Insert 500000](/img/inse500000.png)
+
+![Gráfico Search 500000](/img/pesq500000.png)
+
+![Gráfico Remove 500000](/img/rem500000.png)
 
 
 ## Conclusão
 
 <p align="justify">
-    Através da análise do resultado da compressão foi possível identificar um aumento no tamanho do arquivo. Esse comportamento, contrário ao esperado, se deve devido ao código de Huffman verdadeiro (diferente do proposto) utilizar de caracteres como chaves para a construção da árvore e de seus respectivos valores binários. A quantidade de caracteres é muito inferior a quantidade de palavras possíveis dentro de um texto, fazendo com que os valores binários cresçam de tal maneira (devido a quantidade de palavras e o código não ter prefixos repetidos) que o tamanho do arquivo cresça.
+
 </p>
 
-![Scrennshot](img/huffman.jpg)
-
 ## Referências
+<p align="justify">
 
-abuewkodaw
+</p>
 
 ## Compilação e Execução
 
