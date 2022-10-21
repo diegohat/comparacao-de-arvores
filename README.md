@@ -175,7 +175,7 @@ CORMEN, Thomas H. et al. Introduction to algorithms. MIT press, 2022.
 
 FREE CODE CAMP. Free Code Camp: Learn to code — for free, c2022. Disponível em: <https://www.freecodecamp.org>. Acesso em: 14 de out. de 2022.
 
-PROGRAMAÇÃO DESCOMPLICADA. Programação Descomplicada: Lingaugem C Descomplicada, c2022. Disponível em: <https://programacaodescomplicada.wordpress.com/>. Acesso em: 08 de out. de 2022.
+PROGRAMAÇÃO DESCOMPLICADA. Programação Descomplicada: Linguagem C Descomplicada, c2022. Disponível em: <https://programacaodescomplicada.wordpress.com/>. Acesso em: 08 de out. de 2022.
 
 CPPREFERENCE. CPP Reference, c2022. Disponível em: <https://en.cppreference.com/w/>. Acesso em: 17 de out. de 2020.
 
