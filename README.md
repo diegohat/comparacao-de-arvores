@@ -84,7 +84,7 @@ Mais sobre árvores:
 
 <https://sites.google.com/site/proffdesiqueiraed/aulas/aula-10---arvores>
 
-
+***
 ## Metodologia
 
 Foi realizado um estudo prévio das estruturas para compreensão de suas implementações. Em seguida, foram reutilizados códigos de repositórios públicos para o desenvolvimento de uma aplicação que, através da biblioteca [chrono::](https://en.cppreference.com/w/cpp/header/chrono) contabiliza o tempo de execução de cada uma de suas requisições. Após a criação das estruturas básicas, foram adicionados dois arquivos com números gerados aleatóriamente. O arquivo data.txt possui os valores utilizados para gerar as estruturas com 500, 5.000, 50.000, 500.000 dados. Em seguida, foi criado o arquivo input.txt com as entradas para busca. Ao final da coleta, é imprimido no console os tempos de execução. Os tempos foram coletados três vezes e inseridos em uma planilha para o cálculo da média, sua normalização e a criação de um gráfico para representação visual.
@@ -103,6 +103,8 @@ Foi realizado um estudo prévio das estruturas para compreensão de suas impleme
 - Inserção
 - Busca
 - Remoção
+
+***
 ## Resultados e Análises
 
 A diferença no tempo de execução das estruturas, principalmente entre árvore e vetor, é bem vísivel através dos dados coletados. Os vetores possuem valores de inserção muito rápidos devido a não necessidade de percorrer a estrutura para inserir valores. Porém para utilizarmos uma busca no mesmo é necessário aplicar um método de ordenação para que seja possível realizarmos uma pesquisa binária. A remoção, devido a sua necessidade de utilizar o método de pesquisa cai no mesmo critério.
