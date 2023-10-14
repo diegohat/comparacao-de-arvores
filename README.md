@@ -3,24 +3,6 @@
 ![Make](https://img.shields.io/badge/Compilacao-Make-orange)
 ![VSCode](https://img.shields.io/badge/IDE-VSCode-informational)
 
-## Índice
-__0.__ [Proposta](#proposta)
-
-__1.__ [Objetivos](#objetivos)
-
-__2.__ [Fundamento Teórico](#fundamento-teórico)
-
-__3.__ [Metodologia](#metodologia)
-
-__4.__ [Resultados e Análises](#resultados-e-análises)
-
-__5.__ [Conclusão](#discussão-dos-resultados)
-
-__6.__ [Referências](#referências)
-
-__7.__ [Compilação e Execução](#compilação-e-execução)
-
-***
 ## Proposta
 Até o momento trabalhamos com três modelos de árvore, binária, avl e redblack. Chegou o momento de compararmos tais estruturas, observando seu comportamento sob diferentes volumes de dados. Para tanto, elabore arquivos que contenham 500 , 5000 , 50.000 , 500.000 entradas numéricas do tipo ponto flutuante. Para tanto, tente evitar repetições de valores em grande escala para que possamos ter uma estrutura profunda. Considere produzir os menores a partir dos maiores volumes de forma randômica. Feito a isso, vamos testar os seguintes processos:
 
